@@ -4,7 +4,7 @@ array_merge_recursive() => multidimensional array
 array_combine() -> index array 
 -->
 <?php
-    // array_merge() use for add two or many array
+    //array_merge() use for add two or many array
     // $a = ['a' => 'sujon', 'b' => 'ahmed', 'c' => 'riman'];
     // $b = ['d' => 'alamin','toukir'];
      
@@ -24,6 +24,15 @@ array_combine() -> index array
     // echo"<pre>";
     // print_r($newArray);
     // echo"</pre>";
+
+    // array_combine() use for as a first array would be key and second array would be value;
+    $name = ['sujon','riman','toukir','alamin'];
+    $age = [21,22,23,24];
+    $newArray = array_combine($name,$age);
+    echo"<pre>";
+    print_r($newArray);
+    echo"</pre>";
+    
 
 
 
